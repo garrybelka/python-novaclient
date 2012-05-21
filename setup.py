@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
-requirements = ['httplib2', 'argparse', 'prettytable']
+requirements = ['httplib2', 'argparse', 'prettytable==0.5']
 if sys.version_info < (2, 6):
     requirements.append('simplejson')
 
